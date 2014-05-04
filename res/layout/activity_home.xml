@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				xmlns:tools="http://schemas.android.com/tools"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:paddingBottom="@dimen/activity_vertical_margin"
+				android:paddingLeft="@dimen/activity_horizontal_margin"
+				android:paddingRight="@dimen/activity_horizontal_margin"
+				android:paddingTop="@dimen/activity_vertical_margin"
+				tools:context=".CircularProgressBarSample"
+				xmlns:CPB="http://schemas.android.com/apk/res/com.sample.nice">
+
+	<com.nice.progress.CircularProgressBar
+		android:id="@+id/holoCircularProgressBar1"
+		android:layout_width="300dp"
+		android:layout_height="300dp"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="30dp"
+		CPB:stroke_width="10dp"
+		CPB:marker_visible="false"
+		CPB:progress_background_color="#88a7a7a7"
+		CPB:progress_color="#ff7068d3"
+		CPB:thumb_visible="false" />
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:padding="20dp"
+		android:layout_below="@id/holoCircularProgressBar1"
+		android:gravity="center_horizontal"
+		android:layout_marginTop="20dp"
+		>
+
+		<Button
+			android:id="@+id/twenty"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="20%" />
+
+		<Button
+			android:id="@+id/eighty"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="20dp"
+			android:layout_marginRight="20dp"
+			android:text="80%" />
+
+		<Button
+			android:id="@+id/full"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="100%" />
+	</LinearLayout>
+
+</RelativeLayout>
